@@ -1,0 +1,8 @@
+To import data into your mongoDB database.
+Make sure mongoDB is running then run the following in a terminal...
+
+Windows
+mongo localhost:$[port]/bookAPI booksJson.js
+
+Mac
+mongo bookAPI < booksJson.js
