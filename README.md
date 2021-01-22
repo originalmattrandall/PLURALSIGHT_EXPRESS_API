@@ -16,3 +16,4 @@
 
 ### Refactor opportunities
 - [ ] book search by query (genre) is case sensitive, Make it not so
+- [ ] Better approach to determine the environment (tes/pilot/prod) and connect to the appropriate database
