@@ -1,9 +1,12 @@
 # Pluralsight Training Course for Node/Express Api
 
 ### Supported Api Calls
-- [x] GET: http://localhost:$[PORT]/api/books -> returns all books in the DB
-- [x] GET: http://localhost:$[PORT]/api/books?genre=Fiction -> returns all books with the specified genre, in this case Fiction
-- [x] GET: http://localhost:4000/api/books/$[ID] -> returns A specific book by its Id
+GET: `http://localhost:$[PORT]/api/books`
+- Returns all books in the database
+GET: `http://localhost:$[PORT]/api/books?genre=Fiction`
+- returns all books with the specified genre
+GET: `http://localhost:4000/api/books/$[ID]`
+- returns a specific book by its ID
 
 ### Requirements
 1. Node must be installed on your machine
@@ -12,9 +15,15 @@
 
 ### Starting the project
 1. In one terminal Start up your mongodb instance.
-2. open a new terminal and navigate to this directory (pluralsight_express_api)
+2. Open a new terminal and navigate to this directory (pluralsight_express_api)
 3. In this new terminal run the `npm install` command
 4. Once done run the `npm start` command
+
+### Running Tests
+1. After the project is all setup (follow points 1-3 in Starting the project)
+2. In the App.js file uncomment line 14 (process.env.ENV = 'Test')
+- tests include full end to end integration tests, this variable ensures that a test db is used and not the production one
+2. run `npm test`
 
 ### Setting up MongoDB
 1. Download and install a local instance of mongoDB from: https://www.mongodb.com/try/download
