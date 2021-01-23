@@ -11,14 +11,14 @@ import routes from './routes/bookrouter.js';
 const app = express();
 const port = process.env.PORT || 3000;
 
-process.env.ENV = 'Test';
+// process.env.ENV = 'Test';
 
 if(process.env.ENV === 'Test'){
   console.log('Connected to test database');
   const db = mongoose.connect('mongodb://localhost/bookAPI_Test');
 } else {
   console.log('Connected to prod database');
-  const db = mongoose.connect('mongodb://localhost/bookAPI_Prod');
+  const db = mongoose.connect('mongodb://localhost/bookAPI');
 }
 
 app.use(bodyParser.urlencoded({extended: true}));
