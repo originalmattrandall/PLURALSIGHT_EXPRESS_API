@@ -4,5 +4,5 @@ Make sure mongoDB is running then run the following in a terminal...
 Windows
 mongo localhost:$[port]/bookAPI booksJson.js
 
-Mac
+Unix
 mongo bookAPI < booksJson.js

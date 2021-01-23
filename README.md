@@ -7,8 +7,14 @@
 
 ### Requirements
 1. Node must be installed on your machine
+2. Local instance of MongoDb with a database called bookAPI
+    - please see the DataImportInstructions.txt
 
 ### Starting the project
+1. In one terminal Start up your mongodb instance.
+2. open a new terminal and navigate to this directory (pluralsight_express_api)
+3. In this new terminal run the `npm install` command
+4. Once done run the `npm start` command
 
 ### Setting up MongoDB
 1. Download and install a local instance of mongoDB from: https://www.mongodb.com/try/download
